@@ -126,9 +126,9 @@ import os
 
 if __name__ == "__main__":
     import os
-    port = int(os.environ.get("PORT", 8080))  # Use dynamic port
+    port = int(os.environ.get("PORT", 8081))  # Use 8081 instead of 8080
     app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
-    app.run(host="0.0.0.0", port=port, debug=False)
+
 
 
 
