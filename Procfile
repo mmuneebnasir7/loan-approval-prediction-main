@@ -1,4 +1,4 @@
-web: gunicorn app:app --bind 0.0.0.0:$PORT
+gunicorn -b 0.0.0.0:8081 app:app
 lsof -i:8080
 kill -9 <PID>
 
